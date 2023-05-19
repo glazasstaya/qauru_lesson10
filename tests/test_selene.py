@@ -11,7 +11,7 @@ from selene import browser, have, by, be
 @allure.feature('Issue в github')
 @allure.story('Тест без шагов')
 @allure.link("https://github.com", name="Testing")
-def test_issue_find():
+def test_issue_find(browser_settings):
     browser.open("https://github.com")
 
     browser.element('.header-search-input').click()

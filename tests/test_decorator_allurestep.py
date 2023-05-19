@@ -32,7 +32,7 @@ def is_issue_visible(number):
 @allure.feature('Issue в github')
 @allure.story('Тест c декораторами allure.step')
 @allure.link("https://github.com", name="Testing")
-def test_decorator_steps():
+def test_decorator_steps(browser_settings):
     githab_open()
     repo_search('eroshenkoam/allure-example')
     go_to_repo('eroshenkoam/allure-example')

@@ -9,7 +9,7 @@ from selene import browser, by, be
 @allure.feature('Issue в github')
 @allure.story('Тест с шагами с with allure.step')
 @allure.link("https://github.com", name="Testing")
-def test_issue_find():
+def test_issue_find(browser_settings):
     with allure.step('Откраваю github'):
         browser.open("https://github.com")
 
